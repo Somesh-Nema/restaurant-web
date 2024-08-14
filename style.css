@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* height: 10vh; */
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navcontainer {
+    width: 100vw;
+    background-color: #C9A67B;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+}
+
+#navlist {
+    width: 100%;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navpara {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(13, 14, 14);
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(13, 14, 14);
+}
+
+#navitems {
+    display: flex;
+    gap: 30px;
+}
+
+.foot {
+    background-color: #C9A67B;
+    min-height: 30px;
+    width: 100vw;
+    text-align: center;
+}
+
+.foot p {
+    color: rgb(13, 14, 14);
+    font-size: 1.5rem;
+}
+
+.Content {
+    width: 60%;
+    margin:  auto; /* Add margin to separate from footer */
+    padding: 2rem; /* Add padding to ensure content doesn't touch footer */
+    border: 2px black solid;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    box-shadow: 0px 0px 30px black;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s linear 0s;
+    box-shadow: 4px 4px 20px black;
+    border-radius: 10px;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 26, 16, 0.76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.4s linear 0s;
+
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+
+}
+
+.rightbox .overlay span{
+    color: rgb(239, 242, 244);
+    font-size: 1rem;
+   
+}
+.rightbox img {
+    height: 450px;
+    width: 20vw;
+    border-radius: 20px;
+    transition: all 0.6s 0s;
+}
+
+.rightbox:hover{
+    transform: scale(1.1);
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.igbox{
+    font-size:1.5rem ;
+}
+.rbox{
+    font-size:1.1rem ;
+}
+
+.leftbox h1{
+    font-size: 2.5rem;
+}
